@@ -8,18 +8,20 @@
 import SwiftUI
 
 struct CharactersCounterView: View {
+    
+    let userName: String
+    let color: Color
+    
     private var count = 0
     
-    @Binding var userName: String
-    @Binding var color: Color
-    
-    
-    init(text: Binding<String>, color: Binding<Color>) {
-        self._userName = text
-        count = self._userName.wrappedValue.count
-        self._color = color
+    init(userName: String, color: Color) {
+        self.userName = userName
+        count = self.userName.count
+        self.color = color
     }
-    
+}
+
+extension CharactersCounterView {
     var body: some View {
         Text("\(count)")
             .foregroundColor(color)
@@ -28,6 +30,6 @@ struct CharactersCounterView: View {
 
 struct CharactersCounterView_Previews: PreviewProvider {
     static var previews: some View {
-        CharactersCounterView(text: .constant("name"), color: .constant(.red))
+        CharactersCounterView(userName: "name", color: .red)
     }
 }

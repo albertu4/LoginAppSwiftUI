@@ -18,7 +18,7 @@ struct RegisterView: View {
             HStack {
                 UserRegisterTFView(userName: $userName, color: $color, isDisabled: $isDisabled)
                 
-                CharactersCounterView(text: $userName, color: $color)
+                CharactersCounterView(userName: userName, color: color)
             }
             
             RegisterButtonView(isDisabled: isDisabled, userName: userName)

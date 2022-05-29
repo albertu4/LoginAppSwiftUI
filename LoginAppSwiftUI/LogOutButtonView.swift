@@ -13,7 +13,9 @@ struct LogOutButtonView: View {
     var body: some View {
         Button  {
             user.name = ""
+            UserDefaults.standard.removeObject(forKey: "userName")
             user.isRegistered.toggle()
+            UserDefaults.standard.removeObject(forKey: "isRegistered")
         } label: {
             Text("LogOut")
                 .font(.title)

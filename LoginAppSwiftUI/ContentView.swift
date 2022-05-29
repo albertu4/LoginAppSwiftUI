@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var timer = TimeCounter()
+    @EnvironmentObject private var userManager: UserManager
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Text("Hello, \(userManager.name)!")
+                .font(.largeTitle)
+                .padding(.top, 100)
+            Text("\(timer.counter)")
+                .font(.largeTitle)
+                .padding(.top, 200)
+            Spacer()
+            StartButtonView(timer: timer)
+            Spacer()
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(UserManager())
     }
 }

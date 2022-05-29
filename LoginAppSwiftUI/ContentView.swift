@@ -18,10 +18,11 @@ struct ContentView: View {
                 .padding(.top, 100)
             Text("\(timer.counter)")
                 .font(.largeTitle)
-                .padding(.top, 200)
+                .padding(.top, 100)
             Spacer()
             StartButtonView(timer: timer)
             Spacer()
+            LogOutButtonView()
         }
     }
 }

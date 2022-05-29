@@ -22,7 +22,7 @@ struct UserRegisterTFView: View {
     }
     
     private func changeViewOfRegisterMenu() {
-        if userName.count >= 3 {
+        if userName.count > 2 {
             color = .blue
             isDisabled = false
         } else {

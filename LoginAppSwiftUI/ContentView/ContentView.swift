@@ -16,9 +16,11 @@ struct ContentView: View {
             Text("Hello, \(userManager.name)!")
                 .font(.largeTitle)
                 .padding(.top, 100)
+            
             Text("\(timer.counter)")
                 .font(.largeTitle)
                 .padding(.top, 100)
+            
             Spacer()
             StartButtonView(timer: timer)
             Spacer()

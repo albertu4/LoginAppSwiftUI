@@ -9,6 +9,9 @@ HW 3.3
 The second screen is the timer window. Where there are the user name, the timer value and the start and exit buttons. The user name is stored in User Defaults.
 Depending on the presence of the saved user name, the first or second screen opens.
 
+**WHAT'S NEW I USED:** @EnvironmentObject, @Published, @AppStorage, @StateObject, Group, Codable, final class, custom Modifier, 
+ObservableObject, Timer
+
 **GIF:**
 
 ![Simulator Screen Recording - iPhone 14 Pro - 2022-11-28 at 23 20 49](https://user-images.githubusercontent.com/97275239/204328511-132ebfa2-1a90-4883-843f-211307d7118d.gif)

@@ -9,34 +9,34 @@
 /* Begin PBXBuildFile section */
 		74101A992842FD440043281C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101A982842FD440043281C /* RegisterView.swift */; };
 		74101A9B2843004F0043281C /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101A9A2843004F0043281C /* StarterView.swift */; };
-		74101A9F284320640043281C /* LogOutButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101A9E284320640043281C /* LogOutButtonView.swift */; };
-		74101AA3284346980043281C /* CharactersCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101AA2284346980043281C /* CharactersCounterView.swift */; };
 		74101AA7284376F00043281C /* RegisterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101AA6284376F00043281C /* RegisterButtonView.swift */; };
 		74101AA9284378080043281C /* UserRegisterTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74101AA8284378080043281C /* UserRegisterTFView.swift */; };
 		7428AA17283CD0E00089C4C3 /* LoginAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA16283CD0E00089C4C3 /* LoginAppSwiftUIApp.swift */; };
-		7428AA19283CD0E00089C4C3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA18283CD0E00089C4C3 /* ContentView.swift */; };
+		7428AA19283CD0E00089C4C3 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA18283CD0E00089C4C3 /* TimerView.swift */; };
 		7428AA1B283CD0E20089C4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7428AA1A283CD0E20089C4C3 /* Assets.xcassets */; };
 		7428AA1E283CD0E20089C4C3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7428AA1D283CD0E20089C4C3 /* Preview Assets.xcassets */; };
-		7428AA25283CD2C70089C4C3 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA24283CD2C70089C4C3 /* StartButtonView.swift */; };
 		7428AA27283CD46E0089C4C3 /* TimeCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA26283CD46E0089C4C3 /* TimeCounter.swift */; };
 		7428AA29283CD8090089C4C3 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7428AA28283CD8090089C4C3 /* UserManager.swift */; };
+		742C1F4C2934C61400975FE4 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C1F4B2934C61400975FE4 /* DataManager.swift */; };
+		742C1F4F2935027000975FE4 /* ButtonVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C1F4E2935027000975FE4 /* ButtonVIew.swift */; };
+		742C1F5129350E0700975FE4 /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C1F5029350E0700975FE4 /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74101A982842FD440043281C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		74101A9A2843004F0043281C /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
-		74101A9E284320640043281C /* LogOutButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutButtonView.swift; sourceTree = "<group>"; };
-		74101AA2284346980043281C /* CharactersCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersCounterView.swift; sourceTree = "<group>"; };
 		74101AA6284376F00043281C /* RegisterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButtonView.swift; sourceTree = "<group>"; };
 		74101AA8284378080043281C /* UserRegisterTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRegisterTFView.swift; sourceTree = "<group>"; };
 		7428AA13283CD0E00089C4C3 /* LoginAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7428AA16283CD0E00089C4C3 /* LoginAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppSwiftUIApp.swift; sourceTree = "<group>"; };
-		7428AA18283CD0E00089C4C3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7428AA18283CD0E00089C4C3 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		7428AA1A283CD0E20089C4C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7428AA1D283CD0E20089C4C3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		7428AA24283CD2C70089C4C3 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		7428AA26283CD46E0089C4C3 /* TimeCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCounter.swift; sourceTree = "<group>"; };
 		7428AA28283CD8090089C4C3 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		742C1F4B2934C61400975FE4 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		742C1F4E2935027000975FE4 /* ButtonVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVIew.swift; sourceTree = "<group>"; };
+		742C1F5029350E0700975FE4 /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,6 @@
 				74101A982842FD440043281C /* RegisterView.swift */,
 				74101AA8284378080043281C /* UserRegisterTFView.swift */,
 				74101AA6284376F00043281C /* RegisterButtonView.swift */,
-				74101AA2284346980043281C /* CharactersCounterView.swift */,
 			);
 			path = RegisterView;
 			sourceTree = "<group>";
@@ -64,10 +63,10 @@
 		74101AAB284379E20043281C /* ContentView */ = {
 			isa = PBXGroup;
 			children = (
-				7428AA18283CD0E00089C4C3 /* ContentView.swift */,
+				7428AA18283CD0E00089C4C3 /* TimerView.swift */,
+				742C1F4E2935027000975FE4 /* ButtonVIew.swift */,
+				742C1F5029350E0700975FE4 /* ButtonModifier.swift */,
 				7428AA26283CD46E0089C4C3 /* TimeCounter.swift */,
-				7428AA24283CD2C70089C4C3 /* StartButtonView.swift */,
-				74101A9E284320640043281C /* LogOutButtonView.swift */,
 			);
 			path = ContentView;
 			sourceTree = "<group>";
@@ -93,7 +92,7 @@
 			children = (
 				7428AA16283CD0E00089C4C3 /* LoginAppSwiftUIApp.swift */,
 				74101A9A2843004F0043281C /* StarterView.swift */,
-				7428AA28283CD8090089C4C3 /* UserManager.swift */,
+				742C1F4D2934C61B00975FE4 /* Services */,
 				74101AAA284379C00043281C /* RegisterView */,
 				74101AAB284379E20043281C /* ContentView */,
 				7428AA1A283CD0E20089C4C3 /* Assets.xcassets */,
@@ -108,6 +107,15 @@
 				7428AA1D283CD0E20089C4C3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		742C1F4D2934C61B00975FE4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7428AA28283CD8090089C4C3 /* UserManager.swift */,
+				742C1F4B2934C61400975FE4 /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,14 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				74101AA9284378080043281C /* UserRegisterTFView.swift in Sources */,
-				74101AA3284346980043281C /* CharactersCounterView.swift in Sources */,
+				742C1F4C2934C61400975FE4 /* DataManager.swift in Sources */,
 				74101A9B2843004F0043281C /* StarterView.swift in Sources */,
-				7428AA25283CD2C70089C4C3 /* StartButtonView.swift in Sources */,
+				742C1F5129350E0700975FE4 /* ButtonModifier.swift in Sources */,
 				74101AA7284376F00043281C /* RegisterButtonView.swift in Sources */,
-				74101A9F284320640043281C /* LogOutButtonView.swift in Sources */,
-				7428AA19283CD0E00089C4C3 /* ContentView.swift in Sources */,
+				7428AA19283CD0E00089C4C3 /* TimerView.swift in Sources */,
 				7428AA17283CD0E00089C4C3 /* LoginAppSwiftUIApp.swift in Sources */,
 				74101A992842FD440043281C /* RegisterView.swift in Sources */,
+				742C1F4F2935027000975FE4 /* ButtonVIew.swift in Sources */,
 				7428AA29283CD8090089C4C3 /* UserManager.swift in Sources */,
 				7428AA27283CD46E0089C4C3 /* TimeCounter.swift in Sources */,
 			);

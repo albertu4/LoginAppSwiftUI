@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct LoginAppSwiftUIApp: App {
-    @StateObject private var userManager = UserManager()
+    private let user = DataManager.shared.loadUser()
     
     var body: some Scene {
         WindowGroup {
             StarterView()
-                .environmentObject(userManager)
+                .environmentObject(UserManager.init(user: user))
         }
     }
 }

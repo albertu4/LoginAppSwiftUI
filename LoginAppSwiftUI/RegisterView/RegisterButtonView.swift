@@ -8,34 +8,21 @@
 import SwiftUI
 
 struct RegisterButtonView: View {
-    let isDisabled: Bool
-    let userName: String
-    
-    @EnvironmentObject private var user: UserManager
+    let action: () -> Void
     
     var body: some View {
         
-        Button(action: registerUser) {
+        Button(action: action) {
             HStack {
                 Image(systemName: "checkmark.circle")
                 Text("OK")
             }
-        }.disabled(isDisabled)
-    }
-    
-    private func registerUser() {
-        if !userName.isEmpty {
-            user.name = userName
-            user.isRegistered.toggle()
-            
-            UserDefaults.standard.set(userName, forKey: "userName")
-            UserDefaults.standard.set(user.isRegistered, forKey: "isRegistered")
         }
     }
 }
 
 struct RegisterButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterButtonView(isDisabled: false, userName: "name")
+        RegisterButtonView(action: {})
     }
 }

@@ -9,31 +9,23 @@ import SwiftUI
 
 struct UserRegisterTFView: View {
     @Binding var userName: String
-    @Binding var color: Color
-    @Binding var isDisabled: Bool
+    let isDisabled: Bool
     
     var body: some View {
-        TextField("Enter your name...", text: $userName)
-            .multilineTextAlignment(.center)
+        HStack {
+            TextField("Enter your name...", text: $userName)
+                .multilineTextAlignment(.center)
             .frame(width: 150, height: 40)
-            .onChange(of: userName) { newValue in
-                changeViewOfRegisterMenu()
-            }
-    }
-    
-    private func changeViewOfRegisterMenu() {
-        if userName.count > 2 {
-            color = .blue
-            isDisabled = false
-        } else {
-            color = .red
-            isDisabled = true
+            
+            Text("\(userName.count)")
+                .foregroundColor(isDisabled ? .green : .red)
         }
+            
     }
 }
 
 struct UserRegisterTFView_Previews: PreviewProvider {
     static var previews: some View {
-        UserRegisterTFView(userName: .constant("name"), color: .constant(.blue), isDisabled: .constant(false))
+        UserRegisterTFView(userName: .constant("name"), isDisabled: true)
     }
 }

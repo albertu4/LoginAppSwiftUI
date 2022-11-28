@@ -8,20 +8,26 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var userName = ""
-    @State private var color = Color.red
-    @State private var isDisabled = true
+    @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
         VStack {
-            
             HStack {
-                UserRegisterTFView(userName: $userName, color: $color, isDisabled: $isDisabled)
-                
-                CharactersCounterView(userName: userName, color: color)
+                UserRegisterTFView(
+                    userName: $userManager.user.name,
+                    isDisabled: userManager.nameIsValid
+                )
             }
             
-            RegisterButtonView(isDisabled: isDisabled, userName: userName)
+            RegisterButtonView(action: registerUser)
+                .disabled(!userManager.nameIsValid)
+        }
+    }
+    
+    private func registerUser() {
+        if !userManager.user.name.isEmpty {
+            userManager.user.isRegistered.toggle()
+            DataManager.shared.save(user: userManager.user)
         }
     }
 }
@@ -29,5 +35,6 @@ struct RegisterView: View {
 struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
         RegisterView()
+            .environmentObject(UserManager())
     }
 }

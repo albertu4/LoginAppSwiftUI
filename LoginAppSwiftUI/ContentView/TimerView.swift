@@ -7,13 +7,13 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TimerView: View {
     @StateObject private var timer = TimeCounter()
     @EnvironmentObject private var userManager: UserManager
     
     var body: some View {
         VStack {
-            Text("Hello, \(userManager.name)!")
+            Text("Hello, \(userManager.user.name)!")
                 .font(.largeTitle)
                 .padding(.top, 100)
             
@@ -22,16 +22,21 @@ struct ContentView: View {
                 .padding(.top, 100)
             
             Spacer()
-            StartButtonView(timer: timer)
+            ButtonView(color: .red, title: timer.buttonTitle) {
+                timer.startTimer()
+            }
+            
             Spacer()
-            LogOutButtonView()
+            ButtonView(color: .blue, title: "Log out") {
+                DataManager.shared.clear(userManager: userManager)
+            }
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TimerView()
             .environmentObject(UserManager())
     }
 }
